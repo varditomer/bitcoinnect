@@ -1,0 +1,40 @@
+.contact-preview {
+    display: flex;
+    align-items: center;
+    // justify-content: space-evenly;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: $contact-desktop-width;
+    height: $contact-desktop-height;
+    gap: 10px;
+    padding: 5px;
+    background-color: $secondary-bgc;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .img-container {
+        display: flex;
+        flex-basis: 30%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .contact-details{
+        display: flex;
+        flex-basis: 70%;
+        height: 100%;
+        // align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .name{
+            font-weight: 600;
+            font-size: rem(18px);
+    
+        }
+        .phone{
+            font-size: rem(14px);
+
+        }
+
+    }
+}
