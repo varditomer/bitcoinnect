@@ -3,7 +3,7 @@ import { bitcoinService } from '../services/bitcoin.service'
 import { Chart } from '../components/Chart'
 
 
-export class Statistic extends Component {
+export class StatisticPage extends Component {
     state = {
         marketPrice: null,
         confirmedTransactions: null

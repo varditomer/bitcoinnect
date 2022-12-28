@@ -2,11 +2,11 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
 import './assets/scss/global.scss'
 import { AppHeader } from './components/AppHeader'
-import { Home } from './views/Home'
+import { HomePage } from './views/HomePage'
 import { ContactIndex } from './views/ContactIndex'
 import { ContactDetails } from './views/ContactDetails'
 import { ContactEdit } from './views/ContactEdit'
-import { Statistic } from './views/Statistic'
+import { StatisticPage } from './views/StatisticPage'
 
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
             <Route exact path='/contact/edit/:id?' component={ContactEdit} />
             <Route exact path='/contact/:id' component={ContactDetails} />
             <Route path='/contact' component={ContactIndex} />
-            <Route path='/statistic' component={Statistic} />
-            <Route path='/' component={Home} />
+            <Route path='/statistic' component={StatisticPage} />
+            <Route path='/' component={HomePage} />
           </Switch>
         </div>
 

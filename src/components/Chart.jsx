@@ -15,7 +15,6 @@ export function Chart({ data }) {
     const stats = values?.map(coords => {
         return ({ [period]: new Date(coords.x * 1000).toLocaleDateString(), [unit]: coords.y })
     })
-    console.log(`stats:`, stats)
 
     return (
         <div className="chart">

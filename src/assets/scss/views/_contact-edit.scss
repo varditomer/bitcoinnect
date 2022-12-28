@@ -8,6 +8,7 @@
         background-color: $header-bgc;
         height: $headerHeight;
         align-items: center;
+        border-bottom: 1px solid gray;
         a {
             border: unset;
             padding: 10px 0;

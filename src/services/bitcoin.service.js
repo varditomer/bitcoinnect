@@ -19,10 +19,7 @@ async function getRate(dollars = 1) {
 
 async function getMarketPrice(time = 'months', count = 5) {
     try {
-        console.log(`count:`, count)
-        console.log(`time:`, time)
         const res = await axios.get(`https://api.blockchain.info/charts/market-price?timespan=5months&format=json&cors=true`)
-        console.log(`res.data:`, res.data)
         return res.data
     } catch (err) {
         console.log('Couldnt get market price:', err)

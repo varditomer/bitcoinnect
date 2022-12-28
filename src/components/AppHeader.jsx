@@ -8,12 +8,11 @@ function _AppHeader(props) {
 
     return (
         <header className='app-header'>
-            <NavLink exact to='/' className="app-title"><span className="bit">&#8383;</span>itCo<span className="coin">in</span><span className="connect">nect</span></NavLink>
+            <NavLink title="Home" exact to='/' className="app-title"><span className="bit">&#8383;</span>itCo<span className="coin">in</span><span className="connect">nect</span></NavLink>
             <nav className="nav-links">
-                {/* <NavLink className="app-icon" exact to='/'>🏠</NavLink> */}
-                <NavLink className="app-icon" to='/contact'>👫</NavLink>
-                <NavLink className="app-icon" exact to='/statistic'>📈</NavLink>
-                <button className="back" onClick={onBack}>⬅</button>
+                <NavLink title="Contacts" className="app-icon" to='/contact'>👫</NavLink>
+                <NavLink title="Statistic" className="app-icon" exact to='/statistic'>📈</NavLink>
+                {/* <button className="back" onClick={onBack}>⬅</button> */}
             </nav>
         </header>
     )

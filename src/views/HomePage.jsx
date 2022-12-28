@@ -2,21 +2,24 @@ import { Component } from 'react'
 import { bitcoinService } from '../services/bitcoin.service'
 import { userService } from '../services/user.service'
 import { Chart } from '../components/Chart'
+import { MoveList } from '../components/MoveList'
 
-export class Home extends Component {
+export class HomePage extends Component {
     state = {
         user: null,
         bitRate: null,
         marketPrice: null
     }
     async componentDidMount() {
-        const user = await userService.getUser()
+        const user = userService.getUser()
+        console.log(`user:`, user)
         const bitRate = await bitcoinService.getRate()
         const marketPrice = await bitcoinService.getMarketPrice()
         this.setState({ user, bitRate, marketPrice })
     }
     render() {
         const { user, bitRate, marketPrice } = this.state
+        console.log(`user:`, user)
         if (!user || !bitRate || !marketPrice) return <div>Loading...</div>
 
         return (
@@ -42,6 +45,8 @@ export class Home extends Component {
                 <section className="chart">
                     <Chart data={marketPrice} />
                 </section>
+
+                <MoveList loggedinUser={user} bitRate={bitRate} title='Your last 3 moves:' />
 
 
 
