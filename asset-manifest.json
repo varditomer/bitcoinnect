@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bitcoinnect/static/css/main.2c0efa34.css",
+    "main.js": "/bitcoinnect/static/js/main.68c810e6.js",
+    "static/js/787.1a20d284.chunk.js": "/bitcoinnect/static/js/787.1a20d284.chunk.js",
+    "index.html": "/bitcoinnect/index.html",
+    "main.2c0efa34.css.map": "/bitcoinnect/static/css/main.2c0efa34.css.map",
+    "main.68c810e6.js.map": "/bitcoinnect/static/js/main.68c810e6.js.map",
+    "787.1a20d284.chunk.js.map": "/bitcoinnect/static/js/787.1a20d284.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c0efa34.css",
+    "static/js/main.68c810e6.js"
+  ]
+}
